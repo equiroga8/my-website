@@ -1,4 +1,4 @@
- {
+{
   "name": "myWebsite",
   "version": "0.0.0",
   "private": true,
@@ -8,7 +8,7 @@
     "start_old": "node ./bin/www"
   },
   "engines": {
-    "node": "4.2.6",
+    "node": "8.11.1",
     "npm": "5.6.0"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "sequelize": "^3.30.2",
+    "serve-favicon": "^2.5.0",
     "sqlite3": "^3.1.8",
     "supervisor": "^0.12.0"
   }
