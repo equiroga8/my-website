@@ -1,9 +1,55 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: lightblue;
+
+
+*{
+	font-family: 'Jua', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+footer {
+	padding: 5px 5px 5px 5px;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #403E3E /*linear-gradient(to right, #3366ff 0%, #77aaff 100%)*/;
+    color: white;
+    text-align: center;
+    
+}
+
+.nav.navbar-nav li a {
+   	color: #D3D3D3;
+   	font-size: 15px;
+   	padding-top: 15px;
+   	
+ 	}
+ .nav-logos {
+   	
+ 	padding-bottom: 3px;
+  	width: 25px;
+   	
+ 	}	
+.nav.navbar-nav li a:hover {
+   	color: #fff;
+
+ }
+
+ .nav .active a { background:#8F8682 !important;}
+
+.navbar-brand {
+	font-size: 15px;
+	color: white;
+}
+.navbar.navbar-inverse{
+	border-radius: 0px;
+	position: fixed;
+	width: 100%;
+	background: #403E3E/*linear-gradient(to right, #3366ff 0%, #77aaff 100%)*/;
+}
+.content {
+	padding: 7% 20% 20% 20%;
+	background-color: #D9D4D0; 
+}
+.navbar-brand>img {
+	height: 100%;
+ 
+  	width: auto;
 }

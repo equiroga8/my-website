@@ -5,26 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <style type="text/css">
 
-  	.nav.navbar-nav li a {
-   		color: #fff;
-   		font-size: 15px;
-   		padding-top: 15px;
- 	}
-
-	.navbar-brand {
-		font-size: 15px;
-		color: white;
-	}
-
-  </style>
   <body>
-    
-     <nav class="navbar navbar-inverse" style="background: linear-gradient(to right, #3366ff 0%, #77aaff 100%); ">
+  <script type="text/javascript">
+  	$(document).ready(function() {
+	// get current URL path and assign 'active' class
+	var pathname = window.location.pathname;
+	$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+})
+  </script>
+     <nav class="navbar navbar-inverse">
   	<div class="container-fluid">
   		
     <div class="navbar-header">
@@ -33,23 +28,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="/">
-       <div style="color: white"><img src="/images/home.svg" style="padding-bottom: 3px;" width="20px" height="20px" alt="n7"> &nbsp;Home</div>
+      <a class="navbar-brand">
+       <img src="/images/network.svg" width="35px" height="35px" alt="logo">
    	</a>
     </div>
     <div class="collapse navbar-collapse" id="miMenu">
       <ul class="nav navbar-nav">
-        <li ><a href="/quizzes">Quizzes</a></li>
-        <li> <a href="/credits">About</a></li> 
+      	<li><a href="/"><img class = "nav-logos" src="/images/home.svg"> HOME</a></li>
+        <li><a href="/quizzes"><img class = "nav-logos" src="/images/quiz.svg"> QUIZ</a></li>
+        <li> <a href="/credits"><img class = "nav-logos" src="/images/user.svg"> ABOUT</a></li> 
       </ul>
     </div>
   </div>
   </nav>
-    <section>
-      <div>
+    <section class="content">
+      <div class="div">
         <%- body %>
       </div>
     </section>  
-	<footer> <strong>Contact:</strong> e.quiroga1997@gmail.com</footer>
+	<footer> CONTACT: e.quiroga1997@gmail.com <div> Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></footer>
+                      
+                      
   </body>
 </html>
