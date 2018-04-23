@@ -1,7 +1,14 @@
 
 	<p> This website was created by <%= title %> </p>
   	 <img src="/images/n7.jpg" width="200">
-  	 <form method="get" action="/CV_EduardoQuirogaBradshaw_Castellano.pdf">
-   	<button type="submit">Download CV</button>
+  	
+   	<button type="submit" id="cv">Download CV</button>
+   	  <script type="text/javascript">
+  	$(document).ready( () => {
+	$("#cv").on("click", () => {
+		window.open("/CV_EduardoQuirogaBradshaw_Castellano.pdf");
+	});
+})
+  </script>
 	</form>
  

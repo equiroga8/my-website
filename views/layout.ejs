@@ -13,10 +13,19 @@
 
   <body>
   <script type="text/javascript">
-  	$(document).ready(function() {
+  	$(document).ready( () => {
 	// get current URL path and assign 'active' class
 	var pathname = window.location.pathname;
 	$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+	$("#mail").on("click", () => {
+		window.open("mailto:e.quiroga1997@gmail.com");
+	});
+	$("#linkedin").on("click", () => {
+		window.open("https://www.linkedin.com/in/eduardo-quiroga-bradshaw-25411615a/");
+	});
+	$("#github").on("click", () => {
+		window.open("https://github.com/equiroga8/");
+	});
 })
   </script>
      <nav class="navbar navbar-inverse">
@@ -48,7 +57,12 @@
     </div>  
 	
                       
-  <footer> CONTACT: e.quiroga1997@gmail.com <div> Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div></footer>                    
-  </body>
-  
+  <footer> 
+  	<!-- <div> Icons from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a> -->
+  	</div>
+  	<div><input type="image" src="/images/email.svg" id = "mail"> </div>
+  	<div><input type="image" src="/images/linkedin.svg" id = "linkedin"> </div>
+  	<div><input type="image" src="/images/github.svg" id = "github"> </div>
+  </footer>                    
+  </body>  
 </html>

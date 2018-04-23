@@ -1,7 +1,6 @@
 
-
-*{
-	
+:root {
+	--main-nav-color: #8F8682;
 }
 
 body{
@@ -18,44 +17,46 @@ footer {
 	position:relative;
     bottom: 0;
     width: 100%;
-    background: #403E3E /*linear-gradient(to right, #3366ff 0%, #77aaff 100%)*/;
+    background: var(--main-nav-color); /*linear-gradient(to right, #3366ff 0%, #77aaff 100%)*/;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
     
 }
 
 .nav.navbar-nav li a {
-   	color: #D3D3D3;
+   	color: #636363;
    	font-size: 15px;
    	padding-top: 15px;
    	
  	}
  .nav-logos {
-   	
- 	padding-bottom: 3px;
+ 	padding-bottom: 2px;
   	width: 25px;
    	
  	}	
 .nav.navbar-nav li a:hover {
-   	color: #fff;
+   	color: #000;
 
  }
+ .nav .active a { 
+ 	background:#D9D4D0 !important;
+ }
 
- .nav .active a { background:#8F8682 !important;}
 
-.navbar-brand {
-	font-size: 15px;
-	color: white;
-}
 .navbar.navbar-inverse{
 	border-radius: 0px;
 	position: fixed;
 	width: 100%;
-	background: #403E3E/*linear-gradient(to right, #3366ff 0%, #77aaff 100%)*/;
+	background: var(--main-nav-color);
+	
+
 }
 .content {
 	padding: 100px 20% 50px 20%;
-	background-color: #D9D4D0;
+	background-color: #e8edf3;
 	height: 100%;
 	
 }
@@ -67,4 +68,15 @@ footer {
 	height: 100%;
  
   	width: auto;
+}
+.footer-logo{
+	width: 30px;
+}
+footer > div {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+footer > div > input {
+	width: 30px;
 }

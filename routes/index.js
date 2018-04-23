@@ -23,4 +23,5 @@ router.get('/quizzes', function(req, res, next) {
 	.catch(error => {
 	});
 });
+
 module.exports = router;
